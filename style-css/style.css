@@ -3,20 +3,31 @@
 
 :root
 {
-    --bg-black-900:#f2f2fc;
+   /* --bg-black-900:#f2f2fc;
     --bg-black-100:#fdf9ff;
     --bg-black-50:#e8dfec;
     --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-    
-}
-body.dark
-{
+    --text-black-700:#504e70;*/
+
     --bg-black-900:#151515;
     --bg-black-100:#222222;
     --bg-black-50:#393939;
     --text-black-900:#ffffff;
     --text-black-700:#e9e9e9;
+    
+}
+body.dark
+{
+    /*--bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;*/
+    --bg-black-900:#f2f2fc;
+    --bg-black-100:#fdf9ff;
+    --bg-black-50:#e8dfec;
+    --text-black-900:#302e4d;
+    --text-black-700:#504e70;
     
 }
 body
@@ -92,6 +103,8 @@ ul
     color: var(--text-black-900);
     font-weight: 700;
     position: relative;
+        /* Agregar sombra de texto para el efecto de luz */
+    text-shadow: 0 0 10px rgbargba(88, 85, 85, 0.5)
 }
 .section-title h2::before
 {
@@ -316,7 +329,7 @@ h3.my-profession
 .home-info p
 {
     margin-bottom: 70px;
-    font-size: 20px;
+    font-size: 23px;
     color: var(--text-black-700);
 }
 .home .home-img
@@ -381,7 +394,7 @@ h3.my-profession
 }
 .about .about-content .about-text p
 {
-    font-size: 16px;
+    font-size: 19px;
     line-height: 25px;
     color: var(--text-black-700);
 
@@ -553,13 +566,14 @@ h3.my-profession
     text-transform: capitalize;
     color: var(--text-black-900);
 }
-.about .about-content .timeline .timeline-text
+.about .about-content .timeline .timeline-tex
 {
     line-height: 25px;
-    font-size: 16px;
+    font-size: 19px;
     text-align: justify;
     color: var(--text-black-700);
 }
+
 /* service */
 .service .container
 {
@@ -623,7 +637,7 @@ h3.my-profession
 .service .service-item .service-item-inner p
 {
     font-size: 16px;
-    color: var(--text-black-700);
+    color: var(--text-black-900);
     line-height: 25px;
 }
 /* portfolio*/
@@ -700,7 +714,7 @@ h3.my-profession
 {
     font-size: 25px;
     color: var(--skin-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); 
+    text-shadow: 2px 2px 4px rgba(102, 101, 101, 0.966); 
 }
 .contact .contact-info-item h4
 {
@@ -750,7 +764,7 @@ h3.my-profession
 }
 .contact .contact-form .form-item .form-control:focus
 {
-    box-shadow: 0 0 20px rgba(48, 46, 60, 0.25);
+    box-shadow: 0 0 20px rgba(233, 233, 235, 0.849);
 }
 .contact .contact-form .form-item textarea.form-control
 {
